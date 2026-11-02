@@ -36,10 +36,10 @@ def main():
                     testVariable = encodedString[len(characterList)-1:len(characterList)+substringListNumber]
                     encodedVariableList.append(str(testVariable))
                     
-                print(encodedVariableList)
+                #print(encodedVariableList)
                 break
-        print(translatedString)
+        #print(translatedString)
     for String in encodedVariableList:
         encodedString = encodedString.replace(String,DECODING[String])
-        print(encodedString)
+    print(encodedString)
 main()
